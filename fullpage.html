@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>jh2k15博客</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
     * {
         margin: 0;
@@ -19,20 +18,23 @@
 
     .section {
         position: relative;
+        background-color: #fff;
         overflow: hidden;
         text-align: center;
     }
     /*第一屏样式设置*/
 
     .section1 {
+        background-size: cover;
         background-color: #1f2c4c;
     }
 
     .section1 h1 {
-        margin-top: 15%;
+        margin-top: 5%;
         color: #fff;
+        font-weight: normal;
         opacity: .8;
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .section1 p {
@@ -43,27 +45,32 @@
         opacity: .6;
     }
 
-    .section1 img {
-        width: 100%;
-        margin-top: 19%;
-        padding: 0 10px;
+    .section1 a {
+        display: block;
+        margin: 5% auto 0;
+        color: #ff9000;
+        font-size: 18px;
+        opacity: .9;
     }
     /*第二屏样式设置*/
 
     .section2 {
         background: #e7dcc3 no-repeat bottom;
+
     }
 
     .section2 h1 {
         margin: 20px auto;
         color: #333;
-        font-size: 30px;
+        font-size: 50px;
+        font-weight: normal;
     }
 
-    .section2 img {
-        width: 80%;
-        margin-top: 15%;
-        padding: 0 10px;
+    .section2 a {
+        display: block;
+        margin: 20px auto 0;
+        color: #08c;
+        font-size: 18px;
     }
     /*第三屏样式设置*/
 
@@ -75,7 +82,7 @@
     .section3 h1 {
         margin: 20px auto 20px -1500px;
         color: #fff;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: normal;
         width: 60%;
         /*margin-left: -1500px;*/
@@ -89,10 +96,11 @@
         /*margin-left: 1500px;*/
     }
 
-    .section3 img {
-        width: 80%;
-        margin-top: 15%;
-        padding: 0 10px;
+    .section3 a {
+        display: block;
+        margin: 20px auto 0;
+        color: #08c;
+        font-size: 18px;
     }
     /*第四屏样式设置*/
 
@@ -107,10 +115,48 @@
         font-weight: normal;
     }
 
+    .section4 .row {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .section4 .column {
+        margin: 10px;
+        padding-bottom: 30px;
+    }
+
+    .section4 .column img {
+        height: 300px;
+        margin-top: 30px;
+    }
+
     .section4 .column h4 {
         color: #fff;
         margin: 20px auto;
         font-weight: normal;
+    }
+
+    .section4 .column h4.wechat-gzh {
+        background-size: 102px 22px;
+        width: 102px;
+        height: 22px;
+    }
+
+    .section4 .column h4.wechat-zf {
+        background-size: 178px 22px;
+        width: 178px;
+        height: 22px;
+    }
+
+    .section4 .column h4.edition {
+        background-size: 190px 22px;
+        width: 190px;
+        height: 22px;
     }
 
     .section4 .column p {
@@ -118,37 +164,10 @@
         margin: 10px auto;
     }
 
-    .section4 img {
-        width: 60%;
-        display: inline;
-    }
-
-    .img-wrap {
-        height: 800px;
-    }
-
-    @media (min-width: 768px) {
-        .section1 h1 {
-            margin-top: 3%;
-        }
-        .section1 img {
-            width: auto;
-            margin-top: 0;
-            padding: 0 10px;
-        }
-        .section2 img {
-            width: auto;
-            margin-top: 15%;
-            padding: 0 10px;
-        }
-        .section3 img {
-            width: auto;
-            margin-top: 15%;
-            padding: 0 10px;
-        }
-        .section4 h1 {
-            margin-bottom: 50px;
-        }
+    .section4 .column a {
+        display: block;
+        margin: 10px auto 0;
+        color: #08c;
     }
     </style>
 </head>
@@ -157,33 +176,31 @@
     <div id="fullPage">
         <div class="section section1">
             <h1>欢迎来到，jh2k15.online</h1>
-            <p>个人博客
-                <br>2k15 online 是一款自己喜欢的游戏，所以做了个有自己名字首字母在前面的网站
-                <br>网站在建设中</p>
-            <div class="img-wrap">
-                <img src="images/jh2k15.jpg" alt="">
-            </div>
+            <p>
+                个人博客
+            </p>
+            <a href="#"><img src="images/jh2k15.jpg" alt=""></a>
         </div>
         <div class="section section2">
             <h1>技术分享</h1>
-            <div class="img-wrap">
-                <img src="images/iphone5.png" alt="">
-            </div>
+            <a href="#">进入</a>
+            <img src="images/iphone5.png" alt="">
         </div>
         <div class="section section3">
             <h1>网络日志</h1>
             <p></p>
+            <a href="#">进入</a>
             <img src="images/iphone5.png" alt="">
         </div>
         <div class="section section4">
             <h1>欢迎关注</h1>
             <div class="row">
-                <div class="col-md-6">
-                    <img src="images/jh2k15_gzh.jpg" class="wechat-gzh img-responsive">
+                <div class="column">
+                    <img src="images/jh2k15_gzh.jpg" class="wechat-gzh">
                     <h4 class="wechat-gzh">欢迎关注微信公众号</h4>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/jh2k15_zf.jpg" class="wechat-zf img-responsive">
+                <div class="column">
+                    <img src="images/jh2k15_zf.jpg" class="wechat-zf">
                     <h4 class="wechat-zf">谢谢支持</h4>
                 </div>
             </div>
@@ -196,6 +213,7 @@
     $(document).ready(function() {
         $('#fullPage').fullpage({
             verticalCentered: false,
+            //sectionsColor: ['aqua','crimson','green','darkviolet'],
             anchors: ['page1', 'page2', 'page3', 'page4'],
             navigation: true,
             //navigationTooltips: [''],
@@ -214,9 +232,12 @@
                         move('.section3 p').set('margin-left', '20%').end();
                         break;
                     case 4:
-                        move('.section4 h4.wechat-gzh').scale(1.2).end(function() {
-                            move('.section4 h4.wechat-zf').scale(1.2).end();
-                        });
+
+
+                                move('.section4 h4.wechat-gzh').scale(1.2).end(function() {
+                                    move('.section4 h4.wechat-zf').scale(1.2).end();
+                                });
+
                         break;
                     default:
                         break;
@@ -237,14 +258,19 @@
                         move('.section3 p').set('margin-left', '1500px').end();
                         break;
                     case 4:
+
+
                         move('.section4 h4.wechat-gzh').scale(1).end();
                         move('.section4 h4.wechat-zf').scale(1).end();
+
                         break;
                     default:
                         break;
                 }
             },
         })
+
+
     });
     </script>
 </body>
